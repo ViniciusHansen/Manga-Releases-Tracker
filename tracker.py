@@ -2,11 +2,6 @@ from selenium import webdriver
 import time
 import os
 
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--log-level=3')
-driver = webdriver.Chrome(options=chrome_options)
-
 
 def clearConsole():
     command = 'clear'
@@ -14,6 +9,11 @@ def clearConsole():
         command = 'cls'
     os.system(command)
 
+
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--log-level=3')
+driver = webdriver.Chrome(options=chrome_options)
 
 mangas = {
     'Black Clover': 'https://mangalivre.net/manga/black-clover/1751',
