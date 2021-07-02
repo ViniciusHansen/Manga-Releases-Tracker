@@ -13,9 +13,7 @@ mangas = {
     'Boku no Hero': 'https://mangalivre.net/manga/boku-no-hero-academia/1319'
 }
 
-print('\n')
-print('Buscando Dados...')
-print('\n')
+print('\nBuscando Dados...\n')
 
 for manga in mangas:
     driver.get(mangas[manga])
@@ -29,8 +27,7 @@ for manga in mangas:
 
     print(driver.title)
     print('-' * 48)
-    print('Último capítulo: {}, publicado em: {} \n{}'.format(
+    print('Último capítulo: {}, publicado em: {} \n{}\n\n'.format(
         numero_ultimo_cap.text[-3::], data_ultimo_cap.text, link))
-    print('\n')
 
 driver.quit()
