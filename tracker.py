@@ -12,17 +12,18 @@ def reset_settings():
 
 reset_settings()
 
-mangas = {
-    'Black Clover': 'https://mangalivre.net/manga/black-clover/1751',
-    'Solo Leveling': 'https://mangalivre.net/manga/solo-leveling/7702',
-    'Boku no Hero': 'https://mangalivre.net/manga/boku-no-hero-academia/1319'
-}
+
+mangas = (
+    'https://mangalivre.net/manga/black-clover/1751',
+    'https://mangalivre.net/manga/solo-leveling/7702',
+    'https://mangalivre.net/manga/boku-no-hero-academia/1319'
+)
 
 print('\nBuscando Dados...\n')
 
 
 for manga in mangas:
-    driver.get(mangas[manga])
+    driver.get(manga)
     data_ultimo_cap = driver.find_element_by_xpath(
         '//*[@id="chapter-list"]/div[2]/ul/li[1]/a/div[1]/span')
     numero_ultimo_cap = driver.find_element_by_xpath(
