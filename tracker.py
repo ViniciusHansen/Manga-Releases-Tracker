@@ -2,10 +2,15 @@ from selenium import webdriver
 import time
 
 
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--log-level=3')
-driver = webdriver.Chrome(options=chrome_options)
+def reset_settings():
+    chrome_options = webdriver.ChromeOptions()
+    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--log-level=3')
+    global driver
+    driver = webdriver.Chrome(options=chrome_options)
+
+
+reset_settings()
 
 mangas = {
     'Black Clover': 'https://mangalivre.net/manga/black-clover/1751',
@@ -15,9 +20,9 @@ mangas = {
 
 print('\nBuscando Dados...\n')
 
+
 for manga in mangas:
     driver.get(mangas[manga])
-    time.sleep(1.5)
     data_ultimo_cap = driver.find_element_by_xpath(
         '//*[@id="chapter-list"]/div[2]/ul/li[1]/a/div[1]/span')
     numero_ultimo_cap = driver.find_element_by_xpath(
@@ -25,9 +30,11 @@ for manga in mangas:
     link = driver.find_element_by_xpath(
         '//*[@id="chapter-list"]/div[2]/ul/li[1]/a').get_attribute("href")
 
-    print(driver.title)
     print('-' * 48)
+    print(driver.title[:-27])
     print('Último capítulo: {}, publicado em: {} \n{}\n\n'.format(
         numero_ultimo_cap.text[-3::], data_ultimo_cap.text, link))
-
+    driver.close()
+    reset_settings()
+    # time.sleep(1.5)
 driver.quit()
