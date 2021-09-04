@@ -5,5 +5,7 @@
 - data de publicação
 - link para a leitura
 
+### Baixe a versão mais recente do chrome driver: https://sites.google.com/a/chromium.org/chromedriver/downloads
+
 Exemplo: <br/>
 ![exemplo](docs/exemplo.png)
