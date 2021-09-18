@@ -8,7 +8,7 @@
 
 ## Dependências:
 - chromedriver atualizado
-    - Se o programa não funcionar baixe a versão mais recente do [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+    - Se o programa não funcionar baixe a versão mais recente do [chromedriver](https://sites.google.com/chromium.org/driver/downloads?authuser=0)
 - Caso for usar o tracker.py
   - `pip install selenium`
 
