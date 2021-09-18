@@ -8,7 +8,7 @@
 
 ## Dependências:
 - chromedriver atualizado
-    - Se o programa não funcionar execute o arquivo `update_chromedriver.ps1` para atualizar o chromedriver.
+    - Se o programa não funcionar baixe a versão mais recente do [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - Caso for usar o tracker.py
   - `pip install selenium`
 
@@ -16,13 +16,6 @@
 Execute o `tracker_headless.exe` ou `tracker.exe`
 - Recomendo utilizar a versão headless, mas se não funcionar utilize a normal.
 - Para alterar os mangás que são acompanhados, basta adicionar/remover seu link na lista 'mangas'.
-
-
- <br/>
-
-
-
-
-
+<br>
 # To-do:
 - fazer a lista em um JSON
