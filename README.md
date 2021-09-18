@@ -1,4 +1,4 @@
-# Minimalist Manga Chapter Release Tracker (MMCRT)
+# Minimalist Manga Chapter Release Tracker
 ![exemplo](docs/exemplo.gif)
 
 ## Este script utiliza o selenium para buscar mangás no mangalivre.net e exibir no terminal:
