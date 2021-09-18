@@ -1,9 +1,10 @@
 from selenium import webdriver
+import sys
 
 
 def reset_settings():
     chrome_options = webdriver.ChromeOptions()
-    # chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--headless')
     chrome_options.add_experimental_option(
         'excludeSwitches', ['enable-logging'])
     global driver
