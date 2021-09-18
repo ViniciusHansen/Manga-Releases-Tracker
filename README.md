@@ -1,4 +1,4 @@
-# Manga-Releases-Tracker
+# Minimalist Manga Chapter Release Tracker (MMCRT)
 ![exemplo](docs/exemplo.gif)
 
 ## Este script utiliza o selenium para buscar mangás no mangalivre.net e exibir no terminal:
@@ -16,6 +16,8 @@
 Execute o `tracker_headless.exe` ou `tracker.exe`
 - Recomendo utilizar a versão headless, mas se não funcionar utilize a normal.
 - Para alterar os mangás que são acompanhados, basta adicionar/remover seu link na lista 'mangas'.
+
 <br>
+
 # To-do:
 - fazer a lista em um JSON
