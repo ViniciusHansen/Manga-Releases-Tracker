@@ -16,8 +16,3 @@
 Execute o `tracker_headless.exe` ou `tracker.exe`
 - Recomendo utilizar a versão headless, mas se não funcionar utilize a normal.
 - Para alterar os mangás que são acompanhados, basta adicionar/remover seu link na lista 'mangas'.
-
-<br>
-
-# To-do:
-- fazer a lista em um JSON
